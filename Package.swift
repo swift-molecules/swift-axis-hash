@@ -18,7 +18,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-molecules/swift-axis.git",
+            url: "https://github.com/swift-atoms/swift-axis.git",
             branch: "main"
         ),
         .package(
@@ -38,6 +38,8 @@ let package = Package(
             name: "Axis Hash Tests",
             dependencies: [
                 "Axis Hash",
+                .product(name: "Axis", package: "swift-axis"),
+                .product(name: "Hash", package: "swift-hash"),
             ]
         ),
     ],
