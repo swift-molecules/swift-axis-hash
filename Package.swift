@@ -18,11 +18,11 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-atoms/swift-axis.git",
+            url: "https://github.com/swift-atoms/swift-axis",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-atoms/swift-hash.git",
+            url: "https://github.com/swift-atoms/swift-hash",
             branch: "main"
         ),
     ],
